@@ -357,7 +357,7 @@ def run_inference_for_single_image(image, graph):
 
 
 
-# model init file path
+# model restore file path
 frozen_model_path = "../input/resnetv2/rennetv2/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/frozen_inference_graph.pb"
 label_map_path = "../input/fasterrcnn/oid_v4_label_map.pbtxt.txt"
 test_image_path = glob("../input/google-ai-open-images-object-detection-track/test/challenge2018_test/*.jpg")
@@ -370,7 +370,7 @@ classtable = pd.read_csv('../input/classlable/class-boxlable.csv', header=None)
 class_dict = {classtable.iloc[i,0]:classtable.iloc[i,1] for i in range(classtable.shape[0])}
 
 
-#load model
+# model restore
 detect_graph = tf.Graph()
 with detect_graph.as_default():
     od_graph_def = tf.GraphDef()

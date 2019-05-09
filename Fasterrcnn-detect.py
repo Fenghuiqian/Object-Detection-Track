@@ -24,12 +24,6 @@ from object_detection.protos import string_int_label_map_pb2
 %matplotlib inline
 
 
-# GPU
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-
-
-
 # manage categories map file
 def _validate_label_map(label_map):
     for item in label_map.item:

@@ -24,6 +24,7 @@ from object_detection.protos import string_int_label_map_pb2
 %matplotlib inline
 
 
+
 # manage categories map file
 def _validate_label_map(label_map):
     for item in label_map.item:
@@ -408,7 +409,6 @@ for one in test_image_path:
         res += '\n'
         PredictionString += res
     results.append({'ImageId':one[78:][:-4] , 'PredictionString': PredictionString.rstrip('\n')})
-
 
 
 

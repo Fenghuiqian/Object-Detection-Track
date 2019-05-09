@@ -25,6 +25,7 @@ from object_detection.protos import string_int_label_map_pb2
 
 
 
+
 # manage categories map file
 def _validate_label_map(label_map):
     for item in label_map.item:

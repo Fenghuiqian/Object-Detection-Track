@@ -232,3 +232,4 @@ for each in test_image_path:
 submit_file = pd.DataFrame.from_records(results, columns = ['ImageId', 'PredictionString'])
 submit_file.to_csv('submit.csv', index=None, header=True)
 
+

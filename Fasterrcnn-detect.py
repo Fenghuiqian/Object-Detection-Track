@@ -407,9 +407,9 @@ for one in test_image_path:
         res += ' ' + str(output_dict['detection_scores'][i])
         for box_locate in range(4):
             res += ' ' + str(output_dict['detection_boxes'][i][box_locate])
-        res += '\n'
+        res += ' '
         PredictionString += res
-    results.append({'ImageId':one[78:][:-4] , 'PredictionString': PredictionString.rstrip('\n')})
+    results.append({'ImageId':one[78:][:-4] , 'PredictionString': PredictionString.rstrip(' ')})
 
 
 

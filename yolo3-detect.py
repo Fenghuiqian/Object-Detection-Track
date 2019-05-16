@@ -188,8 +188,8 @@ class_dict = {classtable.iloc[i,0]:classtable.iloc[i,1] for i in range(classtabl
 
 
 # detect threshold & Model params
-IOU_THRESHOLD = 0.45 #0.5
-CONFIDENCE_SCORE_THRESHOLD = 0.3 #0.6
+IOU_THRESHOLD = 0.6 #0.5
+CONFIDENCE_SCORE_THRESHOLD = 0.04 #0.6
 MODEL_IMAGE_SIZE = (608, 608)
 MODEL_PATH = '../input/yoloopenimagesweight/yolo3-openimages.h5'
 ANCHORS_PATH = '../input/yolo3/model_data/yolo_anchors.txt'

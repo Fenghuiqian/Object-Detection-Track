@@ -6,4 +6,4 @@ A Kaggle competition --Google AI Open Images-Object Detection Track
 3. Faster-rcnn is just for comparing with yolo3 to tune the threshold. It is too slow to complete the test. 
 ## Usage
 1. Each of the 2 files is a Kaggle kernel. Upload pretrained model file by OpenImagesV4 to run it.
-2. Top11%(51/454) on Leaderboard.
+2. Top8%(37/454) on Leaderboard.
